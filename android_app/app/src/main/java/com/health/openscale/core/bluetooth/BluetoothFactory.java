@@ -122,6 +122,10 @@ public class BluetoothFactory {
         if (deviceName.equals("ADV")) {
             return new BluetoothOKOK(context);
         }
+
+        if (deviceName.equals("ESScale-Rev2")) {
+            return new BluetoothESScaleRev2(context);
+        }
         return null;
     }
 }
